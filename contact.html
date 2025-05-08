@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="splash-screen">
+        <div class="vault-door">
+            <h1>Accessing Secure System</h1>
+            <div class="scanner-bar"></div>
+        </div>
+    </div>
+    <header>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="container">
+        <div class="card">
+            <h2>Email</h2>
+            <p>info@Secure.com</p>
+        </div>
+        <div class="card">
+            <h2>Phone</h2>
+            <p>+1 (234) 567-890</p>
+        </div>
+        <div class="card">
+            <h2>Address</h2>
+            <p>123 Web Street<br>Code City, CO 12345</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Secure system. All rights reserved.</p>
+    </footer>
+    <script>
+        if (!sessionStorage.getItem('loggedIn')) {
+    window.location.href = 'index.html';}
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('splash-screen').style.display = 'none';
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

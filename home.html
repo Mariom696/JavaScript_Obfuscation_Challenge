@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure System</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <div id="splash-screen">
+        <div class="vault-door">
+            <h1>Accessing Secure System</h1>
+            <div class="scanner-bar"></div>
+        </div>
+    </div>
+    <header>
+        <h1>Secure System</h1>
+        <p>I Think NOT anymore</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Hello World!</h1>
+        <p>Death is near But the flag is not</p>
+    </section>
+
+    <section class="container">
+        <div class="card">
+            <div class="card-image">
+                <img src="images/plain.jpg" alt="Image 1" />
+            </div>
+            <h2>Code in Plain Sight</h2>
+            <p>Not everything requires encryption; some things are clear.</p><!-- flag{btoa_atob_charCode_master} -->
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="images/hidden.jpg" alt="Image 2" />
+            </div>
+            <h2>Hidden Clue</h2>
+            <p>The answer might be right in front of you.</p>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="images/locked.jpg" alt="Image 3" />
+            </div>
+            <h2>Locked Access</h2>
+            <p>Find the key to proceed further.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Secure system. All rights reserved.</p>
+    </footer>
+    <script>
+        if (!sessionStorage.getItem('loggedIn')) {
+    window.location.href = 'index.html';}
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('splash-screen').style.display = 'none';
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

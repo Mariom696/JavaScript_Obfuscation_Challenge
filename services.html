@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="splash-screen">
+        <div class="vault-door">
+            <h1>Accessing Secure System</h1>
+            <div class="scanner-bar"></div>
+        </div>
+    </div>
+    <header>
+        <h1>Our Services</h1>
+        <p>Explore what we offer.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="container">
+    <div class="card">
+        <h2>Binary Exploitation</h2>
+        <p>Crash programs, hijack execution, and pwn your way to the flag. Stack smashing included!</p>
+    </div>
+    <div class="card">
+        <h2>Web Hacking</h2>
+        <p>XSS, SQLi, and cookie hijacking - break into web apps like a pro.</p>
+    </div>
+    <div class="card">
+        <h2>Reverse Engineering</h2>
+        <p>Crack binaries, analyze malware, and find hidden secrets in compiled code.</p>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 Secure system. All rights reserved.</p>
+    </footer>
+    <script>
+        if (!sessionStorage.getItem('loggedIn')) {
+    window.location.href = 'index.html';}
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('splash-screen').style.display = 'none';
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
